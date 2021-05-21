@@ -64,6 +64,7 @@ function draw(){
   }
   if(frameCount%60 === 0){
     spawnDoor();
+    tower.y = 400;
   }
   drawSprites();
   if(invisibleBlockGroup.isTouching(ghost1) || ghost1.y>600){
