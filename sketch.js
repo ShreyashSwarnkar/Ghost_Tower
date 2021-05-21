@@ -35,10 +35,6 @@ function setup(){
 function draw(){
   background(towerImg);
   
-  if(tower.y<550){
-      tower.y = 400;
-  }
-  
   if(gameState === "play"){
     
     var index = 0;
@@ -82,10 +78,9 @@ function draw(){
        
      }
   
-  
-  
-  
-  
+  if(tower.y<550){
+      tower.y = 400;
+  }
   
 }
 
