@@ -58,13 +58,14 @@ function draw(){
     ghost1.velocityY = -5;
     distance += 5; 
   }
-  
+  if(tower.y<550){
+      tower.y = 400;
+  }
   if(climberG.isTouching(ghost1)){
     ghost1.velocityY = 0
   }
   if(frameCount%60 === 0){
     spawnDoor();
-    tower.y = 400;
   }
   drawSprites();
   if(invisibleBlockGroup.isTouching(ghost1) || ghost1.y>600){
