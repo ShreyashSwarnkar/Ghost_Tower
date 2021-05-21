@@ -35,6 +35,10 @@ function setup(){
 function draw(){
   background(towerImg);
   
+  if(tower.y<550){
+      tower.y = 400;
+  }
+  
   if(gameState === "play"){
     
     var index = 0;
@@ -57,9 +61,6 @@ function draw(){
   if(keyDown(32)){
     ghost1.velocityY = -5;
     distance += 5; 
-  }
-  if(tower.y<550){
-      tower.y = 400;
   }
   if(climberG.isTouching(ghost1)){
     ghost1.velocityY = 0
