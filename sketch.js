@@ -36,8 +36,8 @@ function draw(){
   background(towerImg);
   
   if(gameState === "play"){
-    if(tower.y<550){
-      tower.y = 600;
+    if(tower.y<350){
+      tower.y = 400;
   }
     var index = 0;
     var x = 0;
